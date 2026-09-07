@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUCU Modern Notifications & Progress Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="notify-app">
+        
+        <!-- Toast Stack Container (Top-Right) -->
+        <div id="toast-container" class="toast-stack">
+            <!-- Dynamic Toasts -->
+        </div>
+
+        <!-- Centered Interactive Progress Bar Widget -->
+        <div id="progress-container" class="progress-overlay hidden">
+            <div class="progress-box">
+                <div class="progress-header">
+                    <span id="progress-label" class="progress-title">Performing Action...</span>
+                    <span id="progress-percent" class="progress-percent">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div id="progress-bar-fill" class="progress-bar-fill"></div>
+                </div>
+                <div class="progress-footer">
+                    <span class="cancel-key">[X]</span>
+                    <span class="cancel-label">Cancel Action</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
